@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Project archive</title>
+  <desc id="desc">A neutral sage folder and document illustration used when a project has no representative image.</desc>
+  <rect width="1600" height="900" fill="#e6e9e2"/>
+  <g stroke="#7c9487" stroke-width="4" stroke-linejoin="round">
+    <path d="M496 344c0-15 12-27 27-27h191l47 47h316c15 0 27 12 27 27v245H496Z" fill="#b5c5b8"/>
+    <rect x="620" y="253" width="343" height="351" rx="10" transform="rotate(-8 792 428)" fill="#d0dbcf"/>
+    <path d="M651 235h219l75 75v308H651Z" fill="#f3f4ee"/>
+    <path d="M870 235v75h75" fill="#dbe3d7"/>
+    <path d="M702 366h188M702 406h157M702 446h188" fill="none" stroke="#a2b3a6" stroke-width="9" stroke-linecap="round"/>
+    <path d="M470 454c-2-17 11-32 28-32h604c17 0 30 15 28 32l-30 195c-3 20-20 35-40 35H540c-20 0-37-15-40-35Z" fill="#c5d1c3"/>
+  </g>
+  <rect x="738" y="503" width="124" height="9" rx="4.5" fill="#8fa594"/>
+</svg>
