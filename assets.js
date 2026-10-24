@@ -173,4 +173,7 @@ export const projectAssets = {
   },
 };
 
-export const resumeAssets = { ko: './assets/jeehyeon-lee-resume-ko.pdf' };
+export const resumeAssets = {
+  en: './assets/jeehyeon-lee-resume-en.pdf?v=20261025-resume',
+  ko: './assets/jeehyeon-lee-resume-ko.pdf?v=20261025-resume',
+};
