@@ -3,6 +3,7 @@ import { projectAssets, resumeAssets } from './assets.js?v=20261024-covers';
 import { caseStudies } from './case-studies.js';
 import { renderVisuals } from './visuals.js';
 import { initOrbit } from './orbit.js';
+import { featuredProjectIds, projectHighlights } from './project-highlights.js?v=20261024-focus';
 
 const root = document.documentElement;
 const main = document.querySelector('#main');
@@ -23,10 +24,11 @@ const words = {
     home: 'Home', menu: 'Open menu', close: 'Close menu', navigation: 'Main navigation',
     skip: 'Skip to content', dark: 'Switch to dark mode', light: 'Switch to light mode',
     pause: 'Pause motion', play: 'Resume motion', reduced: 'Reduced motion',
-    eyebrow: 'DATA ANALYSIS · PRODUCT · PEOPLE',
-    statement: 'Understanding people<br><em>through data.</em>',
-    intro: 'I turn questions about user behavior into analysis, and connect findings to practical directions for products and services.',
-    explore: 'Explore projects', aLittle: 'A little about me', recent: 'Recent work',
+    eyebrow: 'DATA ANALYST · PRODUCT & CUSTOMER ANALYTICS',
+    statement: 'Data analyst.<br><em>From behavior to decisions.</em>',
+    intro: 'I use SQL and Python to analyze service logs, identify conversion and retention patterns, and propose next steps for products and customer experiences.',
+    explore: 'Explore projects', aLittle: 'A little about me', recent: 'Selected analytics projects',
+    keyContribution: 'My key contribution', supportingEvidence: 'Evidence', proposedDirection: 'Proposed action',
     viewAll: `View all ${projects.length} projects`, interests: 'What I’m curious about', mindset: 'How I work',
     mindsetText: 'Start with the question. Check what the numbers really mean. Make the next step concrete.',
     mindsetTitle: 'Mindset', mindsetIntro: 'The perspectives I return to when thinking about what makes analysis useful.',
@@ -56,10 +58,11 @@ const words = {
     home: '홈', menu: '메뉴 열기', close: '메뉴 닫기', navigation: '주요 메뉴',
     skip: '본문으로 건너뛰기', dark: '다크 모드로 전환', light: '라이트 모드로 전환',
     pause: '배경 멈추기', play: '배경 움직이기', reduced: '움직임 최소화',
-    eyebrow: '데이터 분석 · 제품 · 사람',
-    statement: '사람을 이해하는 질문,<br><em>데이터로 잇는 다음 행동.</em>',
-    intro: '사용자 행동에 대한 질문을 분석으로 풀고, 발견한 내용을 제품과 서비스의 구체적인 방향으로 연결합니다.',
-    explore: '프로젝트 살펴보기', aLittle: '저를 소개합니다', recent: '최근 작업',
+    eyebrow: '데이터 분석가 · 제품·고객 분석',
+    statement: '사용자 행동을 읽는<br><em>데이터 분석가.</em>',
+    intro: 'SQL·Python으로 서비스 로그를 분석해 전환·리텐션의 단서를 찾고, 제품과 고객 경험의 개선 방향을 제안합니다.',
+    explore: '프로젝트 살펴보기', aLittle: '저를 소개합니다', recent: '대표 분석 프로젝트',
+    keyContribution: '나의 핵심 기여', supportingEvidence: '분석 근거', proposedDirection: '제안한 방향',
     viewAll: `프로젝트 ${projects.length}개 모두 보기`, interests: '관심을 두고 있는 것', mindset: '일하는 방식',
     mindsetText: '질문에서 시작하고, 숫자의 의미를 확인합니다. 그리고 다음 행동을 구체화합니다.',
     mindsetTitle: '마인드셋', mindsetIntro: '좋은 분석이 무엇인지 고민할 때, 잊지 않으려는 기준들입니다.',
@@ -113,9 +116,11 @@ function imageFigure(image, css = '', eager = false) {
   return `<figure class="${css}"><img src="${esc(image.src)}" data-layout="${esc(image.layout || 'cover')}" alt="${esc(tr(image.alt))}" loading="${eager ? 'eager' : 'lazy'}" decoding="async"><figcaption class="image-caption">${esc(tr(image.caption))}</figcaption></figure>`;
 }
 
-function projectRow(project, index, compact = false) {
+function projectRow(project, index, compact = false, featured = false) {
   const image = !compact && projectAssets[project.id]?.image;
-  return `<a class="project-row" href="${projectURL(project)}"><span class="row-index" aria-hidden="true">${String(index + 1).padStart(2, '0')}</span><div><h3 class="project-row-title">${esc(tr(project.title))}</h3><p class="project-row-desc">${esc(tr(project.subtitle))}</p><p class="row-tags">${esc(project.tags.slice(0, 3).join(' · '))}</p></div>${image ? `<img class="row-thumb" src="${esc(image.src)}" data-layout="${esc(image.layout || 'cover')}" alt="" loading="lazy" decoding="async">` : ''}<span class="row-year">${esc(year(project))}</span><span class="row-arrow">${icon('arrow')}</span></a>`;
+  const highlight = featured && projectHighlights[project.id];
+  const preview = highlight ? `<div class="featured-preview"><p><span>${t('keyContribution')}</span> ${esc(tr(highlight.home))}</p><p><span>${t('supportingEvidence')}</span> ${esc(tr(highlight.homeEvidence))}</p></div>` : `<p class="project-row-desc">${esc(tr(project.subtitle))}</p>`;
+  return `<a class="project-row${highlight ? ' project-row-featured' : ''}" href="${projectURL(project)}"><span class="row-index" aria-hidden="true">${String(index + 1).padStart(2, '0')}</span><div><h3 class="project-row-title">${esc(tr(project.title))}</h3>${preview}<p class="row-tags">${esc(project.tags.slice(0, 3).join(' · '))}</p></div>${image ? `<img class="row-thumb" src="${esc(image.src)}" data-layout="${esc(image.layout || 'cover')}" alt="" loading="lazy" decoding="async">` : ''}<span class="row-year">${esc(year(project))}</span><span class="row-arrow">${icon('arrow')}</span></a>`;
 }
 
 function routeName() {
@@ -163,7 +168,8 @@ function renderFooter() {
 }
 
 function renderHome() {
-  return `<section class="hero content-width"><p class="eyebrow">${t('eyebrow')}</p><h1>${esc(tr(profile.name))}</h1><p class="hero-statement">${t('statement')}</p><p class="hero-description">${t('intro')}</p><div class="hero-actions">${action('#/projects', t('explore'))}${action('#/about', t('aLittle'), 'quiet-action')}</div></section><section class="home-archive content-width" aria-labelledby="recent-title"><div class="section-heading"><h2 id="recent-title">${t('recent')}</h2>${action('#/projects', t('viewAll'), 'quiet-action')}</div>${projects.slice(0, 3).map((p, i) => projectRow(p, i)).join('')}</section><section class="home-bottom content-width"><div><h2>${t('interests')}</h2><div class="interest-list">${profile.interests[language].map(item => `<span>${esc(item)}</span>`).join('')}</div></div><div><h2>${t('mindset')}</h2><p>${t('mindsetText')}</p>${action('#/about', t('readMore'), 'quiet-action')}</div></section><section class="home-mindset content-width" aria-labelledby="mindset-title"><div class="mindset-intro"><h2 id="mindset-title">${t('mindsetTitle')}</h2><p>${t('mindsetIntro')}</p></div><dl class="mindset-list">${profile.mindset.map(item => `<div class="mindset-entry"><dt>${esc(tr(item.label))}</dt><dd><h3>${esc(tr(item.title))}</h3><p>${esc(tr(item.description))}</p></dd></div>`).join('')}</dl></section>`;
+  const featuredProjects = featuredProjectIds.map(id => projects.find(project => project.id === id)).filter(Boolean);
+  return `<section class="hero content-width"><p class="eyebrow">${t('eyebrow')}</p><h1>${esc(tr(profile.name))}</h1><p class="hero-statement">${t('statement')}</p><p class="hero-description">${t('intro')}</p><div class="hero-actions">${action('#/projects', t('explore'))}${action('#/about', t('aLittle'), 'quiet-action')}</div></section><section class="home-archive content-width" aria-labelledby="recent-title"><div class="section-heading"><h2 id="recent-title">${t('recent')}</h2>${action('#/projects', t('viewAll'), 'quiet-action')}</div>${featuredProjects.map((p, i) => projectRow(p, i, false, true)).join('')}</section><section class="home-bottom content-width"><div><h2>${t('interests')}</h2><div class="interest-list">${profile.interests[language].map(item => `<span>${esc(item)}</span>`).join('')}</div></div><div><h2>${t('mindset')}</h2><p>${t('mindsetText')}</p>${action('#/about', t('readMore'), 'quiet-action')}</div></section><section class="home-mindset content-width" aria-labelledby="mindset-title"><div class="mindset-intro"><h2 id="mindset-title">${t('mindsetTitle')}</h2><p>${t('mindsetIntro')}</p></div><dl class="mindset-list">${profile.mindset.map(item => `<div class="mindset-entry"><dt>${esc(tr(item.label))}</dt><dd><h3>${esc(tr(item.title))}</h3><p>${esc(tr(item.description))}</p></dd></div>`).join('')}</dl></section>`;
 }
 
 function renderArchive() {
@@ -200,11 +206,14 @@ function caseMaterials(project, assets) {
 function renderProject(project) {
   const assets = projectAssets[project.id] || {};
   const evidence = caseStudies[project.id] || {};
+  const highlight = projectHighlights[project.id];
   const index = projects.indexOf(project);
   const hasMaterials = project.links.length > 0 || (assets.pdfs?.length || 0) > 0;
   const sections = [['overview', 'caseOverview'], ['role', 'caseRole'], ['data', 'caseData'], ['process', 'caseProcess'], ['insights', 'caseInsights'], ['reflection', 'caseReflection'], ['materials', 'materials']].filter(([key]) => key !== 'materials' || hasMaterials);
   const dashboard = ['shared-office', 'subway', 'seoul-locker'].includes(project.id) && assets.gallery?.length ? `<div class="case-dashboard"><h3 class="case-subheading">${t('dashboard')}</h3>${assets.gallery.map(image => imageFigure(image)).join('')}</div>` : '';
-  const overview = `<p class="case-kicker">${t('oneLine')}</p><p class="case-one-line">${esc(tr(evidence.oneLine || project.summary))}</p><h3 class="case-subheading">${t('problem')}</h3>${caseText(tr(project.question))}`;
+  const overview = highlight
+    ? `<p class="case-kicker">${t('keyContribution')}</p><p class="case-one-line">${esc(tr(highlight.contribution))}</p><dl class="case-summary-facts"><div><dt>${t('supportingEvidence')}</dt><dd>${esc(tr(highlight.evidence))}</dd></div><div><dt>${t('proposedDirection')}</dt><dd>${esc(tr(highlight.action))}</dd></div></dl><h3 class="case-subheading">${t('problem')}</h3>${caseText(tr(project.question))}`
+    : `<p class="case-kicker">${t('oneLine')}</p><p class="case-one-line">${esc(tr(evidence.oneLine || project.summary))}</p><h3 class="case-subheading">${t('problem')}</h3>${caseText(tr(project.question))}`;
   const data = `<dl class="case-data">${(evidence.data || []).map(item => `<div><dt>${esc(tr(item.label))}</dt><dd>${esc(tr(item.value))}</dd></div>`).join('')}</dl>`;
   const process = `${caseText(tr(project.approach))}${renderVisuals(evidence.visuals, language)}${dashboard}`;
   const insights = `<h3 class="case-subheading">${t('observedInsights')}</h3>${caseText(tr(project.findings))}<h3 class="case-subheading">${t('proposedActions')}</h3>${caseText(tr(project.next))}`;
@@ -245,8 +254,8 @@ function render(focus = false) {
     else if (path === '/resume') { main.innerHTML = renderResume(); title = t('resume'); }
     else { main.innerHTML = `<section class="not-found content-width"><p class="eyebrow">404</p><h1 class="page-title">${t('unknown')}</h1><p class="page-description">${t('unknownText')}</p><div class="hero-actions">${action('#/', t('backHome'))}${action('#/projects', t('projects'), 'quiet-action')}</div></section>`; title = '404'; }
   }
-  document.title = `${title ? `${title} — ` : ''}${tr(profile.name)} — Data, Product & People`;
-  document.querySelector('meta[name="description"]').content = project ? tr(project.summary) : tr(profile.bio);
+  document.title = title ? `${title} — ${tr(profile.name)} — Data, Product & People` : `${tr(profile.name)} — ${language === 'ko' ? '데이터 분석가' : 'Data Analyst'}`;
+  document.querySelector('meta[name="description"]').content = project ? tr(project.summary) : path === '/' ? t('intro') : tr(profile.bio);
   updateHeader();
   renderFooter();
   if (focus) {

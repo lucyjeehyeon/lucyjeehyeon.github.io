@@ -57,3 +57,13 @@ html[lang=ko] .case-visual-heading h3{font-family:var(--sans);font-size:19px;let
 html[lang=ko] .case-visual :is(th,td,.case-visual-bar-label>span){word-break:keep-all;overflow-wrap:break-word}
 @media(max-width:640px){.case-visual{margin:25px 0 28px;padding-top:21px}.case-visual-heading{margin-bottom:20px}.case-visual-heading h3{font-size:21px}.case-section .case-visual-heading p{font-size:11px}.case-visual-bars{gap:22px}.case-visual-bar-label{font-size:12px;gap:9px}.case-visual-bar-label strong{font-size:11px}.case-visual-bar-label>span{max-width:calc(100% - 65px)}.case-visual-bar-track{height:7px}.case-section .case-visual-row-note,.case-section .case-visual-note{font-size:10px}.case-section .case-visual-source{font-size:9px}.case-visual-table{font-size:11px}.case-visual-table th,.case-visual-table td{padding-top:12px;padding-bottom:12px;padding-right:14px}.case-visual-table thead th{font-size:9px}.case-section .case-visual-flow>li{grid-template-columns:27px minmax(0,1fr);gap:12px;padding-bottom:23px}.case-visual-flow h4{font-size:12px}.case-section .case-visual-flow p{font-size:11px}html[lang=ko] .case-visual-heading h3{font-size:17px}}
 @media print{.case-visual{break-inside:avoid}.case-visual-table-scroll{overflow:visible}.case-visual-table{min-width:0!important}.case-visual-bar-track>span{print-color-adjust:exact;-webkit-print-color-adjust:exact}}
+/* A concise ownership/evidence/action lead, inside the existing overview section. */
+#case-overview .case-kicker{color:var(--accent)}
+.case-summary-facts{margin:0;display:grid;gap:0}
+.case-summary-facts>div{display:grid;grid-template-columns:105px minmax(0,1fr);gap:18px;border-top:1px solid var(--rule);padding:15px 0}
+.case-summary-facts>div:last-child{padding-bottom:0}
+.case-summary-facts dt{font-size:11px;line-height:1.85;font-weight:500;color:var(--accent)}
+.case-summary-facts dd{font-size:13px;line-height:1.85;margin:0;color:var(--muted)}
+html[lang=ko] .case-summary-facts :is(dt,dd){word-break:keep-all;overflow-wrap:break-word}
+html[lang=ko] .case-summary-facts dt{font-weight:600}
+@media(max-width:640px){.case-summary-facts>div{grid-template-columns:minmax(0,1fr);gap:5px;padding:13px 0}.case-summary-facts dd{font-size:12px}}
