@@ -6,7 +6,7 @@ const field = (enLabel, koLabel, enValue, koValue) => ({ label: t(enLabel, koLab
 export const productEvidence = {
   'viral-to-value': {
     data: [
-      field('Source', '데이터 출처', 'Real-world data from Company A, a teen social-app provider, supplied through the bootcamp: service DB, analytical marts, and Hackle visit logs. Company A is an anonymized label.', '부트캠프에서 제공받은 A사(청소년 SNS)의 실제 서비스 DB·분석 마트·Hackle 방문 로그를 활용했습니다. A사는 기업명을 익명 처리한 표기입니다.'),
+      field('Source', '데이터 출처', 'Real-world data from Company H, a teen social-app provider, supplied through the bootcamp: service DB, analytical marts, and Hackle visit logs. Company H is an anonymized label.', '부트캠프에서 제공받은 H사(청소년 SNS)의 실제 서비스 DB·분석 마트·Hackle 방문 로그를 활용했습니다. H사는 기업명을 익명 처리한 표기입니다.'),
       field('Population', '전체 분석 범위', '677,081 regular users and 5,551 observed schools in the overall diagnosis; each analysis uses its own eligible population.', '전체 진단의 일반 가입자 677,081명·관측 학교 5,551개. 세부 분석에서는 해당 조건에 맞는 모집단을 별도로 사용했습니다.'),
       field('Content sample', '콘텐츠 분석 표본', '10 schools and 3,898 normalized question phrases. Question records represent generation or assignment, not verified screen views.', '10개 학교·정규화 질문 문구 3,898개. 질문조각은 생성·배정 기록이며 실제 화면 열람과 구분합니다.'),
       field('Visit-log window', '방문 로그 관찰 기간', 'Hackle: 18 July–10 August 2023. This is the Interaction window, not the period of the entire project dataset.', 'Hackle: 2023.07.18–08.10. Interaction 분석의 관찰 기간이며 프로젝트 전체 데이터 기간은 아닙니다.'),
@@ -68,7 +68,7 @@ export const productEvidence = {
   },
   'shared-office': {
     data: [
-      field('Source', '데이터 출처', 'Real-world data from Company B, a shared-office provider, supplied through the bootcamp: trial registration, visits/access, payments, and branches. Company B is an anonymized label; row-level records are not disclosed.', '부트캠프에서 제공받은 B사(공유오피스)의 실제 무료체험 신청·방문·출입·결제·지점 데이터를 활용했습니다. B사는 기업명을 익명 처리한 표기이며, 개인 단위 원본은 공개하지 않습니다.'),
+      field('Source', '데이터 출처', 'Real-world data from Company J, a shared-office provider, supplied through the bootcamp: trial registration, visits/access, payments, and branches. Company J is an anonymized label; row-level records are not disclosed.', '부트캠프에서 제공받은 J사(공유오피스)의 실제 무료체험 신청·방문·출입·결제·지점 데이터를 활용했습니다. J사는 기업명을 익명 처리한 표기이며, 개인 단위 원본은 공개하지 않습니다.'),
       field('Period', '분석 대상 기간', 'May 2021–January 2024. The conversion change-point comparison uses May 2021–August 2023 versus September–December 2023.', '2021.05–2024.01. 전환 변화점 비교는 2021.05–2023.08과 2023.09–12를 구분했습니다.'),
       field('Population', '분석 규모', '9,624 applicants, 6,026 visitors, and 9 branches. Stay-time comparisons exclude 3 visitors with missing durations where specified.', '신청자 9,624명·방문자 6,026명·9개 지점. 체류시간 비교에서는 명시된 분석에 한해 체류시간 결측 3명을 제외했습니다.'),
       field('Behavior window', '행동 관찰 기준', 'Three-day free trial, D0–D2. Used visits across dates, stay duration, check-ins, time of day, and branch usage; exact payment timestamps were unavailable.', '3일 무료체험의 D0–D2를 기준으로 방문일수·체류시간·체크인·이용 시간대·이용 지점을 구성했습니다. 정확한 결제 시각은 제공되지 않았습니다.'),
