@@ -24,8 +24,8 @@ export const projectHighlights = {
       '의미 중복·재노출 간격을 조정하고 완료 후 받은 결과를 확인하는 흐름을 제안했습니다. 효과는 후속 실험으로 검증할 과제입니다.'
     ),
     home: text(
-      'I separated question supply from the individual experience and connected content and post-completion analysis to the service redesign.',
-      '질문 공급량과 개인의 경험을 구분하고, 콘텐츠·완료 이후 행동 분석을 서비스 재설계로 연결했습니다.'
+      'Using real-world teen social-app logs from Company A, I separated question supply from the individual experience and connected content and post-completion analysis to the service redesign.',
+      'A사의 실제 청소년 SNS 로그에서 질문 공급량과 개인의 경험을 구분하고, 콘텐츠·완료 이후 행동 분석을 서비스 재설계로 연결했습니다.'
     ),
     homeEvidence: text(
       'A subsequent question-start event appeared in 2.12% of completion visits within the same visit.',
@@ -46,8 +46,8 @@ export const projectHighlights = {
       'D1 재방문 예약과 방문 후 보상을 결합한 실험을 제안했습니다. 지점별 병목에 맞춰 유입·온보딩·운영 점검의 우선순위를 구분했습니다.'
     ),
     home: text(
-      'I distinguished long stays from repeat visits to examine conversion signals, branch bottlenecks, and a candidate intervention time.',
-      '긴 체류와 반복 방문을 구분해 전환 신호를 분석하고, 지점별 병목과 개입 후보 시점을 진단했습니다.'
+      'Using real-world shared-office visit and payment logs from Company B, I distinguished long stays from repeat visits to examine conversion signals, branch bottlenecks, and a candidate intervention time.',
+      'B사의 실제 공유오피스 방문·결제 로그에서 긴 체류와 반복 방문을 구분해 전환 신호를 분석하고, 지점별 병목과 개입 후보 시점을 진단했습니다.'
     ),
     homeEvidence: text(
       'Among single-branch users, repeat-date visitors had an 8.38 percentage-point higher observed payment rate than one-day visitors.',
@@ -68,8 +68,8 @@ export const projectHighlights = {
       '무행동형의 첫 콘텐츠 진입과 약한 학습형의 다음 행동 안내를 후속 실험으로 제안했습니다. 전환·갱신 개선은 검증 전입니다.'
     ),
     home: text(
-      'I defined the first-seven-day learning funnel and behavioral segments, then assessed an activation candidate and content-improvement priorities.',
-      '가입 첫 7일 학습 퍼널과 행동 세그먼트를 정의하고, 활성화 후보·콘텐츠 개선 우선순위를 검토했습니다.'
+      'Using real-world subscription-education data from Company C, I defined the first-seven-day learning funnel and behavioral segments, then assessed an activation candidate and content-improvement priorities.',
+      'C사의 실제 구독형 교육 서비스 데이터로 가입 첫 7일 학습 퍼널과 행동 세그먼트를 정의하고, 활성화 후보·콘텐츠 개선 우선순위를 검토했습니다.'
     ),
     homeEvidence: text(
       'In the post-trial-removal cohort, the observed 30-day first-payment rate was 17.41% for 7+ pre-payment lesson completions in the first seven days, versus 3.37% for 1–6.',

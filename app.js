@@ -1,9 +1,9 @@
-import { projects, profile } from './content.js';
+import { projects, profile } from './content.js?v=20261025-company-labels';
 import { projectAssets, resumeAssets } from './assets.js?v=20261024-covers';
-import { caseStudies } from './case-studies.js';
+import { caseStudies } from './case-studies.js?v=20261025-company-labels';
 import { renderVisuals } from './visuals.js';
 import { initOrbit } from './orbit.js';
-import { featuredProjectIds, projectHighlights } from './project-highlights.js?v=20261024-focus';
+import { featuredProjectIds, projectHighlights } from './project-highlights.js?v=20261025-company-labels';
 
 const root = document.documentElement;
 const main = document.querySelector('#main');
