@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">Shared Office — Return visits</title>
+  <desc id="desc">Editorial cover for an observational free-trial conversion analysis. Among single-branch users, observed payment rates were 35.05 percent for one-day visitors and 43.43 percent for visitors across multiple dates: an observed difference of 8.38 percentage points, not an experimental uplift. Horizontal bars share a zero-to-100-percent scale. The D0, D1 and D2 reference timeline is illustrative and does not represent an individual user's sequence.</desc>
+  <defs>
+    <style>
+      .sans { font-family: 'Segoe UI', Arial, sans-serif; }
+      .mono { font-family: 'Cascadia Mono', Consolas, monospace; }
+      .serif { font-family: Georgia, 'Times New Roman', serif; }
+    </style>
+  </defs>
+  <rect width="1200" height="750" fill="#eeeee7"/>
+
+  <g fill="#367560" class="mono" font-size="16" letter-spacing="2">
+    <text x="64" y="70">SHARED OFFICE / CONVERSION</text>
+    <text x="1136" y="70" text-anchor="end" fill="#64756b">02</text>
+  </g>
+  <path d="M64 102H1136" fill="none" stroke="#c9d3c9"/>
+
+  <g aria-label="Illustrative visit-date reference" class="mono" font-size="16" fill="#64756b">
+    <line x1="300" y1="153" x2="540" y2="153" stroke="#c9d3c9" stroke-width="2"/>
+    <g fill="#367560">
+      <circle cx="300" cy="153" r="5"/>
+      <circle cx="420" cy="153" r="5"/>
+      <circle cx="540" cy="153" r="5"/>
+    </g>
+    <text x="300" y="184" text-anchor="middle">D0</text>
+    <text x="420" y="184" text-anchor="middle">D1</text>
+    <text x="540" y="184" text-anchor="middle">D2</text>
+    <text x="1136" y="162" text-anchor="end">VISIT-DATE REFERENCE</text>
+  </g>
+
+  <g class="sans">
+    <text x="64" y="269" fill="#22332f" font-size="22">One day</text>
+    <text x="64" y="393" fill="#22332f" font-size="22">Repeat dates</text>
+
+    <g class="mono" fill="#64756b" font-size="16">
+      <text x="300" y="228">0</text>
+      <text x="1064" y="228" text-anchor="end">100%</text>
+    </g>
+    <g fill="#d5dfd4">
+      <rect x="300" y="244" width="764" height="48"/>
+      <rect x="300" y="368" width="764" height="48"/>
+    </g>
+    <rect x="300" y="244" width="267.782" height="48" fill="#64756b"/>
+    <rect x="300" y="368" width="331.8052" height="48" fill="#367560"/>
+    <g class="serif" fill="#22332f" font-size="32">
+      <text x="586" y="279">35.05%</text>
+      <text x="650" y="403">43.43%</text>
+    </g>
+
+    <text x="300" y="468" fill="#64756b" font-size="17">Single-branch users · Observed payment rate</text>
+    <text x="1064" y="468" text-anchor="end" fill="#367560" font-size="18">8.38 pp observed gap</text>
+  </g>
+
+  <text x="64" y="624" fill="#22332f" class="serif" font-size="64" letter-spacing="-1.2">Return visits.</text>
+  <line x1="64" y1="655" x2="1136" y2="655" stroke="#c9d3c9"/>
+  <g class="mono" fill="#64756b" font-size="16" letter-spacing=".7">
+    <text x="64" y="691">BEHAVIOR → CONVERSION</text>
+    <text x="1136" y="691" text-anchor="end">OBSERVATIONAL ANALYSIS</text>
+  </g>
+</svg>

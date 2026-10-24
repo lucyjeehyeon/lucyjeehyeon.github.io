@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">Steam Game Classification — Attributes to classes</title>
+  <desc id="desc">An editorial schematic of an individual Orange3 course project using a Kaggle dataset of 2,380 Steam games and seven selected predictors. Logistic Regression and Decision Tree models were compared with Test and Score to classify whether a game was in the dataset's top quartile by download count. The quarter-circle represents the target definition, not an accuracy, a forecast or a deployed recommendation system. No model-performance number is shown because the source evaluation figures require reconciliation.</desc>
+  <defs><style>.mono{font-family:'Cascadia Mono',Consolas,monospace;font-size:16px;letter-spacing:2px}.sans{font-family:'Segoe UI',Arial,sans-serif}.serif{font-family:Georgia,'Times New Roman',serif}</style></defs>
+  <rect width="1200" height="750" fill="#eeeee7"/>
+  <text x="64" y="70" class="mono" fill="#367560">STEAM / GAME CLASSIFICATION</text>
+  <text x="1136" y="70" class="mono" fill="#64756b" text-anchor="end">10</text>
+  <path d="M64 102H1136" fill="none" stroke="#c9d3c9"/>
+  <g class="sans">
+    <text x="64" y="209" fill="#64756b" font-size="18" letter-spacing="1">KAGGLE DATASET</text>
+    <text x="60" y="295" class="serif" fill="#22332f" font-size="82">2,380</text>
+    <text x="64" y="338" fill="#64756b" font-size="21">games · 7 predictors</text>
+    <text x="64" y="395" fill="#64756b" font-size="18">Price, reviews, ratings…</text>
+  </g>
+  <g fill="none" stroke="#367560" stroke-width="2">
+    <path d="M324 290H432M432 290V220H521M507 206L521 220L507 234M432 290V356H521M507 342L521 356L507 370"/>
+    <path d="M783 220H851V290H900M886 276L900 290L886 304M783 356H851V290"/>
+  </g>
+  <g class="sans" fill="#22332f" font-size="23" text-anchor="middle">
+    <text x="650" y="228">Logistic regression</text><text x="650" y="364">Decision tree</text>
+  </g>
+  <path d="M553 252H747M553 388H747" fill="none" stroke="#c9d3c9"/>
+  <text x="650" y="454" class="sans" fill="#64756b" font-size="19" text-anchor="middle">Orange3 · Test &amp; Score</text>
+  <circle cx="1012" cy="290" r="91" fill="none" stroke="#d5dfd4" stroke-width="15"/>
+  <circle cx="1012" cy="290" r="91" fill="none" stroke="#367560" stroke-width="15" stroke-dasharray="142.9425 428.8275" transform="rotate(-90 1012 290)"/>
+  <text x="1012" y="309" class="serif" fill="#22332f" font-size="56" text-anchor="middle">25%</text>
+  <text x="1012" y="420" class="sans" fill="#64756b" font-size="19" text-anchor="middle">Top-download target</text>
+  <text x="1012" y="451" class="sans" fill="#64756b" font-size="16" text-anchor="middle">Not model accuracy</text>
+  <text x="64" y="624" class="serif" fill="#22332f" font-size="64" letter-spacing="-1.5">Attributes to classes.</text>
+  <path d="M64 655H1136" fill="none" stroke="#c9d3c9"/>
+  <text x="64" y="691" class="mono" fill="#64756b">ORANGE3 → MODEL COMPARISON</text>
+  <text x="1136" y="691" class="mono" fill="#64756b" text-anchor="end">INDIVIDUAL COURSE PROJECT</text>
+</svg>

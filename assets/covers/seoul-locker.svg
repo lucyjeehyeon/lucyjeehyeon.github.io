@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">Seoul Parcel Lockers — From source to decision</title>
+  <desc id="desc">A simplified architecture of an implemented individual learning project: public files stored in Google Cloud Storage and loaded to BigQuery, staging, intermediate and mart tables modeled with dbt, facility comparisons in Python with a 25-district summary written back to BigQuery, and five Looker Studio views. The schematic does not imply a scheduled production service or a measured policy outcome.</desc>
+  <defs><style>.mono{font-family:'Cascadia Mono',Consolas,monospace;font-size:16px;letter-spacing:2px}.sans{font-family:'Segoe UI',Arial,sans-serif}.serif{font-family:Georgia,'Times New Roman',serif}</style></defs>
+  <rect width="1200" height="750" fill="#eeeee7"/>
+  <text x="64" y="70" class="mono" fill="#367560">SEOUL LOCKERS / CLOUD ANALYTICS</text>
+  <text x="1136" y="70" class="mono" fill="#64756b" text-anchor="end">05</text>
+  <path d="M64 102H1136" fill="none" stroke="#c9d3c9"/>
+  <g fill="none" stroke="#367560" stroke-width="2">
+    <path d="M132 180H187L216 209V290H132Z"/>
+    <path d="M187 180V209H216M150 232H194M150 251H194M150 270H181"/>
+    <path d="M254 235H473M459 221L473 235L459 249"/>
+    <ellipse cx="596" cy="193" rx="69" ry="18"/>
+    <path d="M527 193V270C527 294 665 294 665 270V193M527 231C527 255 665 255 665 231"/>
+    <path d="M720 235H938M924 221L938 235L924 249"/>
+    <path d="M984 289V245H1008V289M1024 289V218H1048V289M1064 289V180H1088V289"/>
+    <path d="M974 299H1100" stroke="#c9d3c9"/>
+  </g>
+  <g class="sans" fill="#22332f" font-size="25" text-anchor="middle">
+    <text x="174" y="340">GCS</text><text x="596" y="340">BigQuery + dbt</text><text x="1036" y="340">Looker Studio</text>
+  </g>
+  <g class="sans" fill="#64756b" font-size="18" text-anchor="middle">
+    <text x="174" y="374">Source files</text>
+    <text x="596" y="374">Staging → intermediate → mart</text>
+    <text x="1036" y="374">Five analytical views</text>
+  </g>
+  <g fill="none" stroke="#c9d3c9" stroke-width="2">
+    <path d="M596 393V410H174V426M160 412L174 426L188 412"/>
+    <path d="M274 451H454M440 437L454 451L440 465"/>
+    <path d="M748 451H946M932 437L946 451L932 465"/>
+  </g>
+  <g class="sans" fill="#22332f" font-size="21" text-anchor="middle">
+    <text x="174" y="458">Python analysis</text>
+    <text x="596" y="458">25-district summary</text>
+    <text x="1036" y="458">BigQuery</text>
+  </g>
+  <text x="596" y="511" class="sans" fill="#64756b" font-size="17" text-anchor="middle">Facility analysis output returned to the warehouse</text>
+  <text x="64" y="624" class="serif" fill="#22332f" font-size="64" letter-spacing="-1.6">From source to decision.</text>
+  <path d="M64 655H1136" fill="none" stroke="#c9d3c9"/>
+  <text x="64" y="691" class="mono" fill="#64756b">PUBLIC DATA → ANALYTICAL MART</text>
+  <text x="1136" y="691" class="mono" fill="#64756b" text-anchor="end">GCP LEARNING PROJECT</text>
+</svg>

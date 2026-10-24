@@ -1,5 +1,5 @@
 import { projects, profile } from './content.js';
-import { projectAssets, resumeAssets } from './assets.js';
+import { projectAssets, resumeAssets } from './assets.js?v=20261024-covers';
 import { caseStudies } from './case-studies.js';
 import { renderVisuals } from './visuals.js';
 import { initOrbit } from './orbit.js';

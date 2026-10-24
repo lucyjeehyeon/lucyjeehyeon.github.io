@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">Membership pricing — Beyond the winning metric</title>
+  <desc id="desc">Codeit Sprint individual learning exercise on supplied practice data, not an experiment deployed in a live service. Variant A compares monthly and annual prices; variant B emphasizes the annual plan's monthly equivalent. ARPU per assigned user: A 56.82 among 1,277 users and B 88.78 among 1,223 users, in unspecified dataset revenue units. Refund inquiries among subscribers: A 9 of 460, 1.96 percent, and B 20 of 453, 4.42 percent. Inquiries are not completed refunds. Neutral paired typography does not declare a rollout winner. Source: sprint-product.js and membership report.</desc>
+  <defs><style>.mono{font-family:'Cascadia Mono',Consolas,monospace}.sans{font-family:'Segoe UI',Arial,sans-serif}.serif{font-family:Georgia,'Times New Roman',serif}</style></defs>
+  <rect width="1200" height="750" fill="#eeeee7"/>
+  <g class="mono" font-size="16" letter-spacing="2"><text x="64" y="70" fill="#367560">MEMBERSHIP / EXPERIMENT DESIGN</text><text x="1136" y="70" text-anchor="end" fill="#64756b">06</text></g>
+  <path d="M64 102H1136" fill="none" stroke="#c9d3c9"/>
+  <g class="serif" font-size="50" fill="#367560" text-anchor="middle"><text x="606" y="183">A</text><text x="990" y="183">B</text></g>
+  <g class="sans" font-size="18" fill="#64756b" text-anchor="middle"><text x="606" y="216">Monthly / annual comparison</text><text x="990" y="216">Annual plan’s monthly equivalent</text></g>
+  <path d="M420 239H1136M64 352H1136M420 239V476M798 239V476" fill="none" stroke="#c9d3c9"/>
+  <g class="mono" font-size="16" fill="#64756b" letter-spacing=".5"><text x="64" y="284">REVENUE / ASSIGNED USER</text><text x="64" y="420">REFUND INQUIRIES</text></g>
+  <g class="sans" font-size="17" fill="#64756b"><text x="64" y="314">Dataset units · currency unspecified</text><text x="64" y="450">Share of subscribers, not all users</text></g>
+  <g class="serif" font-size="56" fill="#22332f" text-anchor="middle"><text x="606" y="316">56.82</text><text x="990" y="316">88.78</text><text x="606" y="450">1.96<tspan font-size="31">%</tspan></text><text x="990" y="450">4.42<tspan font-size="31">%</tspan></text></g>
+  <g class="mono" font-size="14" fill="#64756b" letter-spacing=".7"><text x="64" y="517">2,500 ASSIGNED USERS</text><text x="1136" y="517" text-anchor="end">REVENUE AND RISK, TOGETHER</text></g>
+  <text x="64" y="624" class="serif" font-size="64" letter-spacing="-1.6" fill="#22332f">Beyond the winning metric.</text>
+  <path d="M64 655H1136" fill="none" stroke="#c9d3c9"/>
+  <g class="mono" font-size="16" letter-spacing=".7" fill="#64756b"><text x="64" y="691">A/B TESTING × CUSTOMER GUARDRAILS</text><text x="1136" y="691" text-anchor="end">LEARNING EXERCISE</text></g>
+</svg>

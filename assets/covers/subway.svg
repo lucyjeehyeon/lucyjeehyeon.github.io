@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">Seoul Subway — Safety in context</title>
+  <desc id="desc">An editorial cover showing the actual distribution of 2,281 recorded subway safety accidents from January 2021 to June 2025: door-related 771, in-station 518, on-board 423, platform-gap 341, escalator or elevator-related 207, and other 21. All bars use the same zero-to-800 count scale. These are recorded events, not exposure-adjusted risk or measured prevention effects.</desc>
+  <defs><style>.mono{font-family:'Cascadia Mono',Consolas,monospace;font-size:16px;letter-spacing:2px}.sans{font-family:'Segoe UI',Arial,sans-serif}.serif{font-family:Georgia,'Times New Roman',serif}</style></defs>
+  <rect width="1200" height="750" fill="#eeeee7"/>
+  <text x="64" y="70" class="mono" fill="#367560">SEOUL SUBWAY / SAFETY ANALYTICS</text>
+  <text x="1136" y="70" class="mono" fill="#64756b" text-anchor="end">04</text>
+  <path d="M64 102H1136" fill="none" stroke="#c9d3c9"/>
+  <g class="sans">
+    <text x="64" y="197" fill="#64756b" font-size="18" letter-spacing="1">RECORDED EVENTS</text>
+    <text x="60" y="291" class="serif" fill="#22332f" font-size="88">2,281</text>
+    <text x="64" y="334" fill="#64756b" font-size="21">Jan 2021 – Jun 2025</text>
+    <path d="M64 369H288" stroke="#c9d3c9"/>
+    <text x="64" y="407" fill="#22332f" font-size="21">Different contexts.</text>
+    <text x="64" y="439" fill="#22332f" font-size="21">Different safety questions.</text>
+    <g fill="#64756b" font-size="18" text-anchor="end">
+      <text x="538" y="193">Door-related</text>
+      <text x="538" y="241">In-station</text>
+      <text x="538" y="289">On-board</text>
+      <text x="538" y="337">Platform-gap</text>
+      <text x="538" y="385">Escalator / elevator</text>
+      <text x="538" y="433">Other</text>
+    </g>
+    <path d="M560 162V449" fill="none" stroke="#c9d3c9"/>
+    <g fill="#d5dfd4">
+      <rect x="560" y="172" width="480" height="28"/>
+      <rect x="560" y="220" width="480" height="28"/>
+      <rect x="560" y="268" width="480" height="28"/>
+      <rect x="560" y="316" width="480" height="28"/>
+      <rect x="560" y="364" width="480" height="28"/>
+      <rect x="560" y="412" width="480" height="28"/>
+    </g>
+    <g fill="#367560">
+      <rect x="560" y="172" width="462.6" height="28"/>
+      <rect x="560" y="220" width="310.8" height="28"/>
+      <rect x="560" y="268" width="253.8" height="28"/>
+      <rect x="560" y="316" width="204.6" height="28"/>
+      <rect x="560" y="364" width="124.2" height="28"/>
+      <rect x="560" y="412" width="12.6" height="28"/>
+    </g>
+    <g fill="#22332f" font-size="19" text-anchor="end">
+      <text x="1118" y="194">771</text><text x="1118" y="242">518</text>
+      <text x="1118" y="290">423</text><text x="1118" y="338">341</text>
+      <text x="1118" y="386">207</text><text x="1118" y="434">21</text>
+    </g>
+    <g fill="#64756b" font-size="16" class="mono" letter-spacing="0">
+      <text x="560" y="483">0</text><text x="1040" y="483" text-anchor="end">800 events</text>
+    </g>
+  </g>
+  <text x="64" y="624" class="serif" fill="#22332f" font-size="64" letter-spacing="-1.4">Safety in context.</text>
+  <path d="M64 655H1136" fill="none" stroke="#c9d3c9"/>
+  <text x="64" y="691" class="mono" fill="#64756b">PUBLIC DATA → SAFETY QUESTIONS</text>
+  <text x="1136" y="691" class="mono" fill="#64756b" text-anchor="end">EVENT COUNTS, NOT RISK</text>
+</svg>

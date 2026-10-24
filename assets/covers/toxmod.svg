@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">ToxMod Ethics Assessment — Protection, with recourse</title>
+  <desc id="desc">A conceptual illustration of proposed governance questions for voice-moderation AI: clear consent, human review and meaningful appeal. This is a document-based qualitative ethics assessment, not a depiction of ToxMod's verified operating workflow, a compliance audit or a direct model-performance test.</desc>
+  <defs><style>.mono{font-family:'Cascadia Mono',Consolas,monospace;font-size:16px;letter-spacing:2px}.sans{font-family:'Segoe UI',Arial,sans-serif}.serif{font-family:Georgia,'Times New Roman',serif}</style></defs>
+  <rect width="1200" height="750" fill="#eeeee7"/>
+  <text x="64" y="70" class="mono" fill="#367560">TOXMOD / AI ETHICS</text>
+  <text x="1136" y="70" class="mono" fill="#64756b" text-anchor="end">09</text>
+  <path d="M64 102H1136" fill="none" stroke="#c9d3c9"/>
+  <text x="64" y="162" class="mono" fill="#64756b">PROPOSED REVIEW FRAMEWORK</text>
+  <g fill="none" stroke="#c9d3c9" stroke-width="2">
+    <circle cx="200" cy="294" r="76"/><circle cx="600" cy="294" r="76"/><circle cx="1000" cy="294" r="76"/>
+    <path d="M302 294H498M484 280L498 294L484 308M702 294H898M884 280L898 294L884 308"/>
+  </g>
+  <g fill="none" stroke="#367560" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M163 292V302M176 275V319M189 259V331M202 270V320M215 281V308M228 290V299"/>
+    <path d="M569 309L590 330L633 267"/>
+    <path d="M1023 321A39 39 0 1 1 1028 271M1028 250V273H1005"/>
+  </g>
+  <g class="sans" fill="#22332f" font-size="25" text-anchor="middle">
+    <text x="200" y="417">Clear consent</text><text x="600" y="417">Human review</text><text x="1000" y="417">Meaningful appeal</text>
+  </g>
+  <text x="600" y="488" class="sans" fill="#64756b" font-size="18" text-anchor="middle">Document-based review · No direct model testing</text>
+  <text x="64" y="624" class="serif" fill="#22332f" font-size="64" letter-spacing="-1.7">Protection, with recourse.</text>
+  <path d="M64 655H1136" fill="none" stroke="#c9d3c9"/>
+  <text x="64" y="691" class="mono" fill="#64756b">PRIVACY · FAIRNESS · TRANSPARENCY</text>
+  <text x="1136" y="691" class="mono" fill="#64756b" text-anchor="end">QUALITATIVE ASSESSMENT</text>
+</svg>

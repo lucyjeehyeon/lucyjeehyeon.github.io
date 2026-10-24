@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">BMW sales forecasting — Different paths to the total</title>
+  <desc id="desc">Conceptual comparison of two actual forecasting approaches in an individual Codeit Sprint learning exercise: forecast the monthly total directly, or forecast eight vehicle-model series and sum their predictions. Eight parallel lines encode the eight component models, not observed sales values or fitted forecast curves. The educational reconstructed dataset contains 96 months, four regions and eight vehicle models, and is not BMW official sales data. The 2025 comparison period was reused for approach selection, so it is not independent post-selection validation. Source: sprint-forecast.js and saved notebook outputs.</desc>
+  <defs><style>.mono{font-family:'Cascadia Mono',Consolas,monospace}.sans{font-family:'Segoe UI',Arial,sans-serif}.serif{font-family:Georgia,'Times New Roman',serif}</style></defs>
+  <rect width="1200" height="750" fill="#eeeee7"/>
+  <g class="mono" font-size="16" letter-spacing="2"><text x="64" y="70" fill="#367560">BMW SALES / TIME-SERIES FORECASTING</text><text x="1136" y="70" text-anchor="end" fill="#64756b">08</text></g>
+  <path d="M64 102H1136" fill="none" stroke="#c9d3c9"/>
+  <g class="mono" font-size="16" letter-spacing="1" fill="#64756b"><text x="64" y="191">DIRECT</text><text x="64" y="369">BOTTOM-UP</text></g>
+  <g class="sans" font-size="21" fill="#22332f"><text x="296" y="180">Monthly total</text><text x="723" y="180" text-anchor="middle">One model</text><text x="1110" y="180" text-anchor="end">Total forecast</text><text x="296" y="357">8 vehicle models</text><text x="723" y="357" text-anchor="middle">Separate forecasts</text><text x="1110" y="357" text-anchor="end">Sum</text></g>
+  <g fill="none" stroke="#c9d3c9" stroke-width="1.5"><path d="M296 215H1110M1095 201L1110 215L1095 229"/><path d="M296 391H415M296 407H415M296 423H415M296 439H415M296 455H415M296 471H415M296 487H415M296 503H415"/></g>
+  <g fill="none" stroke="#367560" stroke-width="1.5"><path d="M415 391H830L1005 447M415 407H830L1005 447M415 423H830L1005 447M415 439H830L1005 447M415 455H830L1005 447M415 471H830L1005 447M415 487H830L1005 447M415 503H830L1005 447M1005 447H1110M1095 433L1110 447L1095 461"/></g>
+  <g fill="#eeeee7" stroke="#367560" stroke-width="1.5"><circle cx="296" cy="215" r="6"/><circle cx="723" cy="215" r="6"/><circle cx="1110" cy="215" r="6"/><circle cx="1005" cy="447" r="6"/></g>
+  <text x="1136" y="545" text-anchor="end" class="mono" font-size="14" letter-spacing=".7" fill="#64756b">96 MONTHS / RECONSTRUCTED EDUCATIONAL DATA</text>
+  <text x="64" y="624" class="serif" font-size="64" letter-spacing="-1.6" fill="#22332f">Different paths to the total.</text>
+  <path d="M64 655H1136" fill="none" stroke="#c9d3c9"/>
+  <g class="mono" font-size="16" letter-spacing=".7" fill="#64756b"><text x="64" y="691">DIRECT × BOTTOM-UP FORECASTING</text><text x="1136" y="691" text-anchor="end">LEARNING EXERCISE</text></g>
+</svg>

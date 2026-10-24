@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">Viral to Value — Beyond completion</title>
+  <desc id="desc">A site-native editorial cover. Among 149,038 question-completion visits, 3,162 included a subsequent question-start event in the same visit, or 2.12 percent. The arc encodes that share, not retention or a measured redesign impact.</desc>
+  <defs>
+    <style>
+      .ink{fill:#22332f}.muted{fill:#64756b}.sage{fill:#367560}.mono{font-family:'Cascadia Mono',Consolas,monospace;font-size:16px;letter-spacing:2px}.sans{font-family:'Segoe UI',Arial,sans-serif}.serif{font-family:Georgia,'Times New Roman',serif}
+    </style>
+  </defs>
+  <rect width="1200" height="750" fill="#eeeee7"/>
+  <text x="64" y="70" class="mono sage">VIRAL TO VALUE / PRODUCT ANALYTICS</text>
+  <text x="1136" y="70" class="mono muted" text-anchor="end">01</text>
+  <g fill="none" stroke="#c9d3c9" stroke-width="1">
+    <path d="M64 102H1136"/>
+    <ellipse cx="830" cy="315" rx="246" ry="155" transform="rotate(-27 830 315)" opacity=".55"/>
+    <ellipse cx="830" cy="315" rx="246" ry="155" transform="rotate(27 830 315)" opacity=".55"/>
+  </g>
+  <g class="sans">
+    <text x="78" y="235" class="muted" font-size="18" letter-spacing=".6">QUESTION COMPLETED</text>
+    <text x="74" y="303" class="serif ink" font-size="70">149,038</text>
+    <text x="78" y="343" class="muted" font-size="21">completion visits</text>
+    <path d="M80 386H472M458 372L472 386L458 400" fill="none" stroke="#367560" stroke-width="2"/>
+    <text x="78" y="433" class="ink" font-size="21">What happens next?</text>
+  </g>
+  <circle cx="830" cy="315" r="143" fill="#eeeee7"/>
+  <circle cx="830" cy="315" r="132" fill="none" stroke="#d5dfd4" stroke-width="18"/>
+  <circle cx="830" cy="315" r="132" fill="none" stroke="#367560" stroke-width="18" stroke-dasharray="17.583 811.797" transform="rotate(-90 830 315)"/>
+  <text x="830" y="318" text-anchor="middle" class="serif ink" font-size="76">2.12<tspan font-size="39">%</tspan></text>
+  <text x="830" y="358" text-anchor="middle" class="sans muted" font-size="19">same-visit next start</text>
+  <text x="830" y="510" text-anchor="middle" class="mono muted" font-size="16">3,162 / 149,038 VISITS</text>
+  <text x="64" y="624" class="serif ink" font-size="64" letter-spacing="-2">Beyond completion.</text>
+  <path d="M64 655H1136" fill="none" stroke="#c9d3c9"/>
+  <text x="64" y="691" class="mono muted">BEHAVIOR → SERVICE REDESIGN</text>
+  <text x="1136" y="691" class="mono muted" text-anchor="end">SAME-VISIT EVENT SEQUENCE</text>
+</svg>

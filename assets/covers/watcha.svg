@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">WATCHA — A reason to choose</title>
+  <desc id="desc">An editorial research cover for a 2023 customer-acquisition study using 97 survey responses, external statistics, and OTT competitor benchmarking. The diagram summarizes content fit, feature awareness, and competitor appeal as research dimensions informing acquisition hypotheses. It is a conceptual research-to-strategy diagram, not measured campaign performance or a representative market estimate.</desc>
+  <defs>
+    <style>.ink{fill:#22332f}.muted{fill:#64756b}.sage{fill:#367560}.mono{font-family:'Cascadia Mono',Consolas,monospace;font-size:16px;letter-spacing:1.6px}.sans{font-family:'Segoe UI',Arial,sans-serif}.serif{font-family:Georgia,'Times New Roman',serif}</style>
+
+  </defs>
+  <rect width="1200" height="750" fill="#eeeee7"/>
+  <text x="64" y="70" class="mono sage">WATCHA / CUSTOMER RESEARCH</text>
+  <text x="1136" y="70" class="mono muted" text-anchor="end">13</text>
+  <path d="M64 102H1136" stroke="#c9d3c9" fill="none"/>
+  <g class="sans">
+    <text x="78" y="218" class="mono muted" font-size="13">TEAM SURVEY</text>
+    <text x="72" y="327" class="serif ink" font-size="112" letter-spacing="-3">97</text>
+    <text x="78" y="371" class="muted" font-size="22">survey responses</text>
+    <text x="78" y="447" class="ink" font-size="19">From audience research</text>
+    <text x="78" y="475" class="muted" font-size="19">to acquisition hypotheses.</text>
+  </g>
+  <g fill="none" stroke="#c9d3c9" stroke-width="1.5" aria-hidden="true">
+    <path d="M356 328H420V226H486M420 328H486M420 328V430H486"/>
+    <path d="M724 226H790V328H848M724 328H790M724 430H790V328"/>
+    <path d="M836 316L848 328L836 340"/>
+  </g>
+  <g fill="#367560" aria-hidden="true">
+    <circle cx="486" cy="226" r="4"/><circle cx="486" cy="328" r="4"/><circle cx="486" cy="430" r="4"/>
+  </g>
+  <g class="sans ink" font-size="24">
+    <text x="509" y="234">Content fit</text>
+    <text x="509" y="336">Feature awareness</text>
+    <text x="509" y="438">Competitor appeal</text>
+  </g>
+  <g class="sans">
+    <text x="885" y="308" class="serif sage" font-size="34">A distinct</text>
+    <text x="885" y="351" class="serif sage" font-size="34">reason to join.</text>
+    <text x="885" y="396" class="mono muted" font-size="12" letter-spacing=".7">STRATEGY PROPOSALS</text>
+  </g>
+  <text x="64" y="624" class="serif ink" font-size="64" letter-spacing="-1.2">A reason to choose.</text>
+  <path d="M64 655H1136" stroke="#c9d3c9" fill="none"/>
+  <g class="mono muted" font-size="16" letter-spacing=".7">
+    <text x="64" y="691">SURVEY × OTT BENCHMARKING</text>
+    <text x="1136" y="691" text-anchor="end">STRATEGY PROPOSAL / 2023</text>
+  </g>
+</svg>
+

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">Subscription education — Signals of learning</title>
+  <desc id="desc">Four early-learning groups in the post-trial-removal signup cohort of 46,055 users. Observed first payment within 30 days: inactive 1.08 percent, explorer 10.98 percent, one to six lesson completions 3.37 percent, and seven or more completions 17.41 percent. Lesson completions are counted in the first seven days before first payment; content-experience flags can include post-payment activity in that window. Connecting lines classify behavior; they are not user transitions or causal effects. Source: evidence-product.js and reviewed segment aggregation.</desc>
+  <defs><style>.mono{font-family:'Cascadia Mono',Consolas,monospace}.sans{font-family:'Segoe UI',Arial,sans-serif}.serif{font-family:Georgia,'Times New Roman',serif}</style></defs>
+  <rect width="1200" height="750" fill="#eeeee7"/>
+  <g class="mono" font-size="16" letter-spacing="2"><text x="64" y="70" fill="#367560">SUBSCRIPTION / EARLY LEARNING</text><text x="1136" y="70" text-anchor="end" fill="#64756b">03</text></g>
+  <path d="M64 102H1136" fill="none" stroke="#c9d3c9"/>
+  <g class="mono" font-size="14" letter-spacing="1.2" fill="#64756b"><text x="64" y="163">BEHAVIOR WINDOW</text><text x="1136" y="163" text-anchor="end">OBSERVED FIRST PAYMENT / 30D</text></g>
+  <text x="60" y="282" class="serif" font-size="90" fill="#22332f">7 days</text>
+  <text x="64" y="323" class="sans" font-size="21" fill="#64756b">Four distinct starting points.</text>
+  <g fill="none" stroke="#c9d3c9" stroke-width="1.5"><path d="M354 318H439M439 221V455M439 221H506M439 299H506M439 377H506M439 455H506"/></g>
+  <g fill="#367560"><circle cx="439" cy="318" r="5"/><circle cx="506" cy="221" r="4"/><circle cx="506" cy="299" r="4"/><circle cx="506" cy="377" r="4"/><circle cx="506" cy="455" r="4"/></g>
+  <g class="sans" font-size="22" fill="#22332f"><text x="532" y="214">Inactive</text><text x="532" y="292">Explorer</text><text x="532" y="370">1–6 completions</text><text x="532" y="448">7+ completions</text></g>
+  <g class="sans" font-size="16" fill="#64756b"><text x="532" y="240">No content experience · no completion</text><text x="532" y="318">Content experience · no completion</text><text x="532" y="396">Lesson completion before payment</text><text x="532" y="474">Exploratory activation candidate</text></g>
+  <g class="serif" font-size="38" fill="#367560" text-anchor="end"><text x="1136" y="229">1.08%</text><text x="1136" y="307">10.98%</text><text x="1136" y="385">3.37%</text><text x="1136" y="463">17.41%</text></g>
+  <text x="64" y="511" class="mono" font-size="14" letter-spacing="1" fill="#64756b">POST-REMOVAL COHORT / 46,055 USERS · OBSERVED ASSOCIATIONS</text>
+  <text x="64" y="624" class="serif" font-size="64" letter-spacing="-1.6" fill="#22332f">Signals of learning.</text>
+  <path d="M64 655H1136" fill="none" stroke="#c9d3c9"/>
+  <g class="mono" font-size="16" letter-spacing=".7" fill="#64756b"><text x="64" y="691">BEHAVIOR → ONBOARDING QUESTIONS</text><text x="1136" y="691" text-anchor="end">CONVERSION &amp; RENEWAL</text></g>
+</svg>

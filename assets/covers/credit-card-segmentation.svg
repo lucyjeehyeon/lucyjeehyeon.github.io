@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">Credit-card segmentation — Patterns, not labels</title>
+  <desc id="desc">A customer-partition strip with widths proportional to the five fitted K-means group sizes: S1 1,194 high-purchase full payers, S2 3,748 everyday spenders carrying balances, S3 2,300 cash-advance-heavy users, S4 594 shorter-tenure cash-advance users, S5 1,114 low-activity users; total 8,950. This is an individual Codeit Sprint learning exercise, not a bank deployment, measured CRM result, or credit-risk assessment. The strip encodes actual group counts, not synthetic cluster coordinates. Seventeen model inputs were reduced to six PCA components retaining 90.7 percent variance. Source: sprint-product.js and segment strategy report.</desc>
+  <defs><style>.mono{font-family:'Cascadia Mono',Consolas,monospace}.sans{font-family:'Segoe UI',Arial,sans-serif}.serif{font-family:Georgia,'Times New Roman',serif}</style></defs>
+  <rect width="1200" height="750" fill="#eeeee7"/>
+  <g class="mono" font-size="16" letter-spacing="2"><text x="64" y="70" fill="#367560">CREDIT CARD / CUSTOMER SEGMENTATION</text><text x="1136" y="70" text-anchor="end" fill="#64756b">07</text></g>
+  <path d="M64 102H1136" fill="none" stroke="#c9d3c9"/>
+  <text x="60" y="208" class="serif" font-size="82" fill="#22332f">8,950</text>
+  <text x="308" y="205" class="sans" font-size="22" fill="#64756b">customers</text>
+  <text x="1136" y="184" text-anchor="end" class="mono" font-size="14" letter-spacing=".7" fill="#64756b">17 INPUTS → 6 PCA COMPONENTS</text>
+  <text x="1136" y="211" text-anchor="end" class="sans" font-size="19" fill="#64756b">Five behavioral groups · k = 5</text>
+  <g aria-label="Customer groups, proportional to their actual counts">
+    <rect x="64" y="272" width="143.012067" height="132" fill="#367560"/>
+    <rect x="207.012067" y="272" width="448.922458" height="132" fill="#d5dfd4"/>
+    <rect x="655.934525" y="272" width="275.486034" height="132" fill="#64756b"/>
+    <rect x="931.420559" y="272" width="71.148156" height="132" fill="#22332f"/>
+    <rect x="1002.568715" y="272" width="133.431285" height="132" fill="#d5dfd4"/>
+    <g fill="none" stroke="#eeeee7" stroke-width="2"><path d="M207.012067 272V404M655.934525 272V404M931.420559 272V404M1002.568715 272V404"/></g>
+  </g>
+  <g class="mono" font-size="16" text-anchor="middle"><text x="135.506034" y="347" fill="#eeeee7">S1</text><text x="431.473296" y="347" fill="#22332f">S2</text><text x="793.677542" y="347" fill="#eeeee7">S3</text><text x="966.994637" y="347" fill="#eeeee7">S4</text><text x="1069.284358" y="347" fill="#22332f">S5</text></g>
+  <g fill="none" stroke="#c9d3c9"><path d="M135.506034 404V426M431.473296 404V426M793.677542 404V426M966.994637 404V426M1069.284358 404V426"/></g>
+  <g class="sans" font-size="21" fill="#22332f" text-anchor="middle"><text x="135.506034" y="455">1,194</text><text x="431.473296" y="455">3,748</text><text x="793.677542" y="455">2,300</text><text x="966.994637" y="455">594</text><text x="1069.284358" y="455">1,114</text></g>
+  <g class="mono" font-size="14" fill="#64756b" letter-spacing=".7"><text x="64" y="514">ACTUAL SEGMENT SIZES</text><text x="1136" y="514" text-anchor="end">BEHAVIORAL PROFILES ≠ CREDIT GRADES</text></g>
+  <text x="64" y="624" class="serif" font-size="64" letter-spacing="-1.6" fill="#22332f">Patterns, not labels.</text>
+  <path d="M64 655H1136" fill="none" stroke="#c9d3c9"/>
+  <g class="mono" font-size="16" letter-spacing=".7" fill="#64756b"><text x="64" y="691">PCA × K-MEANS → CRM HYPOTHESES</text><text x="1136" y="691" text-anchor="end">LEARNING EXERCISE</text></g>
+</svg>

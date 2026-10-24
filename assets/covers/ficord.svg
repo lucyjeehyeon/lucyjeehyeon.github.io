@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">Ficord — A clearer way to report</title>
+  <desc id="desc">An undergraduate service-planning concept from 2022 proposing an easier entry point for reporting suspected voice phishing. The diagram shows a proposed path from suspicion during a call to a reporting action, evidence collection, and responsible-agency support. Consent, recording permissions, feasibility, and agency handoff require validation. It is not a working app, live agency integration, or verified fraud-detection system.</desc>
+  <defs>
+    <style>.ink{fill:#22332f}.muted{fill:#64756b}.sage{fill:#367560}.mono{font-family:'Cascadia Mono',Consolas,monospace;font-size:16px;letter-spacing:1.6px}.sans{font-family:'Segoe UI',Arial,sans-serif}.serif{font-family:Georgia,'Times New Roman',serif}</style>
+
+  </defs>
+  <rect width="1200" height="750" fill="#eeeee7"/>
+  <text x="64" y="70" class="mono sage">FICORD / SERVICE PLANNING</text>
+  <text x="1136" y="70" class="mono muted" text-anchor="end">15</text>
+  <path d="M64 102H1136" stroke="#c9d3c9" fill="none"/>
+  <text x="64" y="153" class="mono muted" font-size="13">PROPOSED USER FLOW</text>
+  <g fill="none" stroke="#367560" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <rect x="119" y="196" width="166" height="289" rx="17"/>
+    <path d="M180 211H225M189 466H216"/>
+    <path d="M175 297C175 268 231 268 231 297C231 316 203 316 203 335"/>
+    <circle cx="203" cy="353" r="2.5" fill="#367560"/>
+  </g>
+  <g class="sans" text-anchor="middle">
+    <text x="203" y="527" class="muted" font-size="19">Suspect a call</text>
+  </g>
+  <g stroke="#c9d3c9" stroke-width="1.5" fill="none" stroke-dasharray="6 7" aria-hidden="true">
+    <path d="M315 339H468"/>
+    <path d="M648 339H791V250H929M791 339V428H929"/>
+  </g>
+  <g stroke="#367560" fill="none" stroke-width="1.6" aria-hidden="true">
+    <circle cx="558" cy="339" r="72"/>
+    <path d="M537 315H579M537 339H579M537 363H564"/>
+    <circle cx="940" cy="250" r="5" fill="#eeeee7"/>
+    <circle cx="940" cy="428" r="5" fill="#eeeee7"/>
+  </g>
+  <text x="558" y="449" text-anchor="middle" class="sans ink" font-size="24">Reporting entry</text>
+  <g class="sans ink" font-size="23">
+    <text x="968" y="245">Evidence</text><text x="968" y="275" class="muted">collection</text>
+    <text x="968" y="423">Agency</text><text x="968" y="453" class="muted">support</text>
+  </g>
+  <text x="558" y="507" text-anchor="middle" class="sans muted" font-size="17">Consent, permissions and handoff to validate</text>
+  <text x="64" y="624" class="serif ink" font-size="64" letter-spacing="-1.2">A clearer way to report.</text>
+  <path d="M64 655H1136" stroke="#c9d3c9" fill="none"/>
+  <g class="mono muted" font-size="16" letter-spacing=".7">
+    <text x="64" y="691">REPORTING FLOW × PUBLIC SAFETY</text>
+    <text x="1136" y="691" text-anchor="end">SERVICE CONCEPT / 2022</text>
+  </g>
+</svg>
+
