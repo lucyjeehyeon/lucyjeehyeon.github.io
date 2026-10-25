@@ -11,7 +11,8 @@ const header = document.querySelector('#header');
 const footer = document.querySelector('#footer');
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 const orbit = initOrbit(document.querySelector('#orbit'));
-let language = root.lang === 'ko' ? 'ko' : 'en';
+// Language and theme changes apply only during the current page visit.
+let language = 'en';
 let filter = 'all';
 let search = '';
 let paused = false;
@@ -269,7 +270,6 @@ document.querySelectorAll('[data-language]').forEach(button => button.addEventLi
   const next = button.dataset.language;
   if (next === language) return;
   language = next;
-  save('jl-language', language);
   const scrollY = window.scrollY;
   render();
   window.scrollTo({ top: scrollY, behavior: 'instant' });
@@ -277,7 +277,6 @@ document.querySelectorAll('[data-language]').forEach(button => button.addEventLi
 
 document.querySelector('#theme-toggle').addEventListener('click', () => {
   root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
-  save('jl-theme', root.dataset.theme);
   updateHeader();
   orbit.refresh();
 });
