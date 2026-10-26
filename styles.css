@@ -54,3 +54,9 @@ html[lang=ko] .hero h1{letter-spacing:-.045em}
 html[lang=ko] .featured-preview p{word-break:keep-all;overflow-wrap:break-word}
 html[lang=ko] .featured-preview p>span{font-family:var(--sans);font-weight:600;letter-spacing:0}
 @media(max-width:640px){.featured-preview{gap:8px}.featured-preview p{font-size:12px}.featured-preview p>span{display:block;margin:0 0 3px}.project-row-featured{padding-block:24px}}
+.resume-language-picker{display:flex;align-items:center;flex-wrap:wrap;gap:12px 18px;margin:-8px 0 22px}
+.resume-language-picker>span{font-size:12px;color:var(--muted)}
+.resume-language-options{display:inline-flex;gap:4px;padding:4px;border:1px solid var(--rule);border-radius:6px;background:var(--surface)}
+.resume-language-options button{min-height:44px;padding:8px 18px;border-radius:3px;font-size:12px;color:var(--muted)}
+.resume-language-options button:hover{color:var(--accent)}
+.resume-language-options button[aria-pressed=true]{background:var(--fg);color:var(--bg)}

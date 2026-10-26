@@ -1,5 +1,5 @@
 import { projects, profile } from './content.js?v=20261025-company-initials';
-import { projectAssets, resumeAssets } from './assets.js?v=20261025-resume';
+import { projectAssets, resumeAssets } from './assets.js?v=20261026-resume-picker';
 import { caseStudies } from './case-studies.js?v=20261025-company-initials';
 import { renderVisuals } from './visuals.js';
 import { initOrbit } from './orbit.js';
@@ -13,6 +13,7 @@ const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 const orbit = initOrbit(document.querySelector('#orbit'));
 // Language and theme changes apply only during the current page visit.
 let language = 'en';
+let resumeLanguage = null;
 let filter = 'all';
 let search = '';
 let paused = false;
@@ -50,7 +51,8 @@ const words = {
     contact: 'Let’s connect', contactText: 'Interested in data analyst roles, especially where product decisions and customer behavior meet.',
     researchTitle: 'Questions worth exploring.', researchDescription: 'A conference paper, applied research, and early experiments with public-interest data. Each project states the evidence it uses—and what it cannot yet claim.',
     publication: 'CONFERENCE PAPER · 2025', readStudy: 'Read the case study', related: 'Applied research & exploration',
-    resumeTitle: 'Résumé.', resumeNote: 'English · PDF · Current résumé', resumeDescription: 'View or download my résumé in English.',
+    resumeTitle: 'Résumé.', resumeNote: 'PDF · Current résumé', resumeDescription: 'View or download my résumé in either language.',
+    resumeLanguage: 'Résumé language', resumeEnglish: 'English', resumeKorean: 'Korean',
     unknown: 'This page has drifted out of orbit.', unknownText: 'The page may have moved. You can explore all projects or return home.',
     undergraduate: 'University', email: 'Email', backHome: 'Back home'
   },
@@ -84,7 +86,8 @@ const words = {
     contact: '연락하기', contactText: '제품의 의사결정과 고객 행동이 만나는 데이터 분석가 직무에 관심이 있습니다.',
     researchTitle: '더 깊이 들여다본 질문.', researchDescription: '학술대회 논문부터 응용 연구, 공공·사회 데이터의 탐색까지. 어떤 근거를 사용했는지, 아직 무엇을 말할 수 없는지 함께 담았습니다.',
     publication: '학술대회 논문 · 2025', readStudy: '프로젝트 자세히 보기', related: '응용 연구와 탐색',
-    resumeTitle: '이력서.', resumeNote: '한국어 · PDF · 현재 이력서', resumeDescription: '한국어 이력서를 확인하거나 다운로드할 수 있습니다.',
+    resumeTitle: '이력서.', resumeNote: 'PDF · 현재 이력서', resumeDescription: '한국어·영어 이력서를 선택해 확인하거나 다운로드할 수 있습니다.',
+    resumeLanguage: '이력서 언어', resumeEnglish: '영어', resumeKorean: '한국어',
     unknown: '궤도 밖의 페이지입니다.', unknownText: '페이지가 이동했을 수 있습니다. 전체 프로젝트를 살펴보거나 홈으로 돌아가세요.',
     undergraduate: '학부', email: '이메일', backHome: '홈으로 돌아가기'
   }
@@ -237,8 +240,12 @@ function renderResearch() {
 }
 
 function renderResume() {
-  const resume = resumeAssets[language];
-  return `<section class="page content-width"><p class="eyebrow">${t('resume')}</p><div class="resume-heading"><h1 class="page-title">${t('resumeTitle')}</h1><p class="resume-note">${t('resumeNote')}</p></div><p class="page-description">${t('resumeDescription')}</p><div class="material-list">${external(resume, t('open'))}<a class="material-link" href="${esc(resume)}" download="Jeehyeon_Lee_Resume_${language.toUpperCase()}.pdf">${t('download')} ${icon('download')}</a></div><iframe class="resume-embed" src="${esc(resume)}#view=FitH" title="${language === 'ko' ? '이지현 한국어 이력서' : 'Jeehyeon Lee — English résumé'}"></iframe></section>`;
+  const selectedLanguage = resumeLanguage || language;
+  const resume = resumeAssets[selectedLanguage];
+  const documentLanguage = t(selectedLanguage === 'ko' ? 'resumeKorean' : 'resumeEnglish');
+  const frameTitle = language === 'ko' ? `이지현 ${documentLanguage} 이력서` : `Jeehyeon Lee — ${documentLanguage} résumé`;
+  const picker = `<div class="resume-language-picker"><span id="resume-language-label">${t('resumeLanguage')}</span><div class="resume-language-options" role="group" aria-labelledby="resume-language-label">${[['en', 'English'], ['ko', '한국어']].map(([code, label]) => `<button type="button" lang="${code}" data-resume-language="${code}" aria-pressed="${selectedLanguage === code}" aria-controls="resume-preview">${label}</button>`).join('')}</div></div>`;
+  return `<section class="page content-width"><p class="eyebrow">${t('resume')}</p><div class="resume-heading"><h1 class="page-title">${t('resumeTitle')}</h1><p class="resume-note">${documentLanguage} · ${t('resumeNote')}</p></div><p class="page-description">${t('resumeDescription')}</p>${picker}<div class="material-list">${external(resume, t('open'))}<a class="material-link" href="${esc(resume)}" download="Jeehyeon_Lee_Resume_${selectedLanguage.toUpperCase()}.pdf">${t('download')} ${icon('download')}</a></div><iframe id="resume-preview" class="resume-embed" src="${esc(resume)}#view=FitH" title="${esc(frameTitle)}"></iframe></section>`;
 }
 
 function render(focus = false) {
@@ -270,6 +277,7 @@ document.querySelectorAll('[data-language]').forEach(button => button.addEventLi
   const next = button.dataset.language;
   if (next === language) return;
   language = next;
+  resumeLanguage = null;
   const scrollY = window.scrollY;
   render();
   window.scrollTo({ top: scrollY, behavior: 'instant' });
@@ -312,6 +320,16 @@ document.addEventListener('click', event => {
   }
   const filterButton = event.target.closest('[data-filter]');
   if (filterButton) { filter = filterButton.dataset.filter; updateArchive(); }
+  const resumeButton = event.target.closest('[data-resume-language]');
+  if (resumeButton && routeName() === '/resume') {
+    const next = resumeButton.dataset.resumeLanguage;
+    if (!['en', 'ko'].includes(next) || next === (resumeLanguage || language)) return;
+    resumeLanguage = next;
+    const scrollY = window.scrollY;
+    render();
+    document.querySelector(`[data-resume-language="${next}"]`)?.focus({ preventScroll: true });
+    window.scrollTo({ top: scrollY, behavior: 'instant' });
+  }
   if (event.target.closest('[data-clear]')) {
     filter = 'all'; search = '';
     const input = document.querySelector('#project-search');
@@ -331,7 +349,7 @@ main.addEventListener('toggle', event => {
   }
 }, true);
 reducedMotion.addEventListener('change', renderFooter);
-window.addEventListener('hashchange', () => render(true));
+window.addEventListener('hashchange', () => { resumeLanguage = null; render(true); });
 window.addEventListener('pagehide', () => orbit.setPaused(true));
 window.addEventListener('pageshow', () => orbit.setPaused(paused));
 render();
